@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="DojoArena.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").hover(function(){
+                    $("#background").css("background-image", $(this).attr("url"));
+                });
+                $("select").hide();
+                $("button").click(function(){
+                    $("button").hide();
+                    $("#background").css("background-image", $(this).attr("url"));
+                    $("#selectarena").text("Select Players");
+                    $("select").show();
+                });
+                $("#player1").change(function(){
+                    $("#character1").html("<" + $("#player1 option:selected").attr("url") + ">");
+                })
+                $("#player2").change(function(){
+                    $("#character2").html("<" + $("#player2 option:selected").attr("url") + ">");
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div id="background">
+            <div id="selector">
+                <h1 id="selectarena">Select Arena</h1>
+                <button url="url(beach.jpg)">Beach</button>
+                <button url="url(earth.jpg)">Planet</button>
+                <button url="url(dojo.jpg)">Dojo</button>
+                <button url="url(forest.jpg)">Forest</button>
+                <button url="url(matrix.jpg)">Matrix</button>
+                <button url="url(snow.jpg)">Snow</button>
+                <select id="player1">
+                    <option value="selectplayer">Select Ninja</option>
+                    <option url='img src="donny.png"'>Donny</option>
+                    <option url='img src="leo.png"'>Leo</option>
+                    <option url='img src="mikey.png"'>Mikey</option>
+                    <option url='img src="raphael.png"'>Raphael</option>
+                </select>
+                <select id="player2">
+                    <option value="selectplayer">Select Ninja</option>
+                    <option url='img src="donny.png"'>Donny</option>
+                    <option url='img src="leo.png"'>Leo</option>
+                    <option url='img src="mikey.png"'>Mikey</option>
+                    <option url='img src="raphael.png"'>Raphael</option>
+                </select>
+            </div>
+            <div id="character1">
+            </div>
+            <div id="character2">
+            </div>
+        </div>
+    </body>
+</html>

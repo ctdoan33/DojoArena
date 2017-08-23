@@ -1,0 +1,45 @@
+#background{
+    width: 1600px;
+    height: 1200px;
+    background-color: black;
+    background-size: 100% 100%;
+    border: 5px solid gray;
+    margin: 40px;
+}
+#selector{
+    width: 300px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    display: block;
+    margin-top: 400px;
+    margin-left: 650px;
+}
+#selectarena{
+    color: yellow;
+    font-size: 30pt;
+}
+button{
+    width: 80px;
+    margin: 5px;
+}
+select{
+    font-size: 16pt;
+}
+#character1{
+    width: 300px;
+    height: 500px;
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+#character2{
+    width: 300px;
+    height: 500px;
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+    margin-left: 500px;
+}
