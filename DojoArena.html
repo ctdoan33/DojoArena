@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>DojoArena</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="DojoArena.css" rel="stylesheet">
@@ -19,10 +19,10 @@
                     $("select").show();
                 });
                 $("#player1").change(function(){
-                    $("#character1").html("<" + $("#player1 option:selected").attr("url") + ">");
+                    $("#character1").html($("#player1 option:selected").attr("url"));
                 })
                 $("#player2").change(function(){
-                    $("#character2").html("<" + $("#player2 option:selected").attr("url") + ">");
+                    $("#character2").html($("#player2 option:selected").attr("url"));
                 })
             });
         </script>
@@ -39,17 +39,17 @@
                 <button url="url(snow.jpg)">Snow</button>
                 <select id="player1">
                     <option value="selectplayer">Select Ninja</option>
-                    <option url='img src="donny.png"'>Donny</option>
-                    <option url='img src="leo.png"'>Leo</option>
-                    <option url='img src="mikey.png"'>Mikey</option>
-                    <option url='img src="raphael.png"'>Raphael</option>
+                    <option url='<img src="donny.png">'>Donny</option>
+                    <option url='<img src="leo.png">'>Leo</option>
+                    <option url='<img src="mikey.png">'>Mikey</option>
+                    <option url='<img src="raphael.png">'>Raphael</option>
                 </select>
                 <select id="player2">
                     <option value="selectplayer">Select Ninja</option>
-                    <option url='img src="donny.png"'>Donny</option>
-                    <option url='img src="leo.png"'>Leo</option>
-                    <option url='img src="mikey.png"'>Mikey</option>
-                    <option url='img src="raphael.png"'>Raphael</option>
+                    <option url='<img src="donny.png">'>Donny</option>
+                    <option url='<img src="leo.png">'>Leo</option>
+                    <option url='<img src="mikey.png">'>Mikey</option>
+                    <option url='<img src="raphael.png">'>Raphael</option>
                 </select>
             </div>
             <div id="character1">
